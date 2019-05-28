@@ -1,0 +1,627 @@
+/*stijlblad*/
+	@font-face {
+    font-family: 'lemonmilkregular';
+    src: url('../fonts/lemonmilk-webfont.woff2') format('woff2'),
+         url('../fonts/lemonmilk-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	}
+	@font-face {
+    font-family: 'museo_sans500';
+    src: url('../fonts/MuseoSans_500-webfont.eot');
+    src: url('../fonts/MuseoSans_500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MuseoSans_500-webfont.woff2') format('woff2'),
+         url('../fonts/MuseoSans_500-webfont.woff') format('woff'),
+         url('../fonts/MuseoSans_500-webfont.ttf') format('truetype'),
+         url('../fonts/MuseoSans_500-webfont.svg#museo_sans500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	}
+	@font-face {
+    font-family: 'museo_sans500_italic';
+    src: url('../fonts/MuseoSans_500_Italic-webfont.eot');
+    src: url('../fonts/MuseoSans_500_Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MuseoSans_500_Italic-webfont.woff2') format('woff2'),
+         url('../fonts/MuseoSans_500_Italic-webfont.woff') format('woff'),
+         url('../fonts/MuseoSans_500_Italic-webfont.ttf') format('truetype'),
+         url('../fonts/MuseoSans_500_Italic-webfont.svg#museo_sans500_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	}
+	html{
+		background-color: #f6f7f8;
+		color: #313131;
+		height: 100%;
+	}
+	body{
+		font-family: 'museo_sans500',Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial, "sans-serif";
+		font-size: 16px;
+		min-height: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	a{	
+		color:  #ffffff;
+		text-decoration: none;
+	}
+	.content {
+  	flex: 1;
+	}
+	#menu{
+		display: none;
+	}
+	.slicknav_menu {
+	display:none;
+	}
+	/*NAV OPMAAK*/
+	nav{
+		clear: right;
+		margin-left: -10%;
+		padding-top: 2%;
+		list-style-type: none;
+		border-bottom: 2px solid black;
+
+	}
+	nav li {
+		font-family: 'lemonmilkregular','museo_sans500', Helvetica , sans-serif;
+		display: inline;
+		padding-left: 2%;
+		padding-right: 2%;
+		letter-spacing: 2px;
+	    font-size: 2vw;
+	    margin: 0 auto;	
+	}
+	nav .lijn a{
+		text-decoration: none;
+		color: black;
+		display:inline-block;
+		position: relative;
+	}
+	nav .lijn a:link {
+			border-bottom: 5px solid rgba(246 ,247 , 248, 0.0);
+			padding-bottom: 1%;	
+
+	}
+	/* visited link */
+	nav .lijn a:visited {
+	}
+	/* mouse over link */
+	nav .lijn a:hover {
+		 	-webkit-transition:  0.5s; /* For Safari 3.1 to 6.0 */
+    		transition: 0.5s;
+			color:hsla(252, 62%, 55%, 1);
+			border-bottom: 5px solid hsla(252, 62%, 55%, 1);
+	}
+	/* selected link */
+	nav .lijn a:active {
+			border-bottom: 3px solid hsla(252, 62%, 55%, 1);
+	}
+
+	/*Icoontjes opmaak*/
+	.kayaklogo{
+		float: left;
+		padding-left: 30%;
+		width: 10vw;		
+		
+	}
+
+
+	.login{
+		padding-top: 2%;
+		margin-left:2%;
+		width: 4%;
+		-webkit-filter: brightness(1%); /* Safari */
+    	filter:brightness(1%);
+	}
+	.login:hover{
+	    -webkit-filter: none; /* Safari */
+			filter:none;
+			
+	}
+	
+	/*newcollection Opmaak*/
+	.newcollection{
+		background-image: url(../images/home/aangepast/imgkopie.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 45vw;
+		text-align: center;
+		color: #ffffff;
+		width: 80%;
+		margin: 0 auto;
+		margin-top: 0.5%;
+		margin-bottom: 8%;
+	}
+	.newcollection img{
+		width: 100%;
+	}
+	.newcollection h1{
+		padding-top: 25%;
+
+		 font-family: 'lemonmilkregular','museo_sans500', Helvetica , sans-serif;
+		 font-size: 5vw;
+		 text-shadow: 1px 1px black;
+	}
+	.newcollection p{
+		font-size: 2vw;
+		text-transform: uppercase;
+		text-shadow: 1px 1px black;
+	}
+	.booknow{
+		position: absolute;
+		max-width: 20%;
+		margin-top: 8%;
+		margin-left: 34%;
+		background-color: rgba(0,0,0,0.5);
+		font-family: 'lemonmilkregular','museo_sans500', Helvetica , sans-serif;
+		font-size: 2vw;
+		border: 5px solid #ffffff;
+		padding: 8px 5px 8px 5px;
+		color: #ffffff;
+	}
+	.booknow:hover{	
+		-webkit-transition:  0.5s; /* For Safari 3.1 to 6.0 */
+    	transition: 0.5s;
+		color: hsla(252, 62%, 55%, 1);
+		border-color: hsla(252, 62%, 55%, 1);
+		background-color: rgba(255,255,255,0.6);
+	}
+
+	/*Opmaak home deel2*/
+	.genders{
+		max-width: 80%;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.halfimg{
+		width: 40%;
+		padding-left: 1%;
+		padding-bottom: 1%;
+		line-height: 0%;
+	}
+	.centerpls{
+		max-width: 80%;
+		text-align: center;
+		margin: 0 auto;
+		float:left;
+		margin-left:10%;
+	}
+	.container {		
+	  position: relative;
+	  width:50%;
+	  margin: 0 auto;
+	  text-align: center;
+	  float:left;
+	}
+
+	.image {
+	  display: inline-block;
+	  width: 100%;
+	  height: auto;
+	  float:right;
+	  margin-bottom: 0%;
+	}
+
+	.overlay {
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  height: 100%;
+	  width: 100%;
+	  opacity: 0;
+	  transition: .5s ease;
+	  background-color: hsla(252, 62%, 55%, 1);
+	}
+
+	.container:hover .overlay {
+	  opacity: 0.8;
+	}
+
+	.text {
+	  letter-spacing: 8px;
+	  color: white;
+	  font-family: 'lemonmilkregular','museo_sans500', Helvetica ,Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, sans-serif;
+	  font-size: 3vw;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	}
+	/*Onderste img home*/
+	.container2 {		
+	  position: relative;
+	  width:100%;
+	  margin: 0 auto;
+	  text-align: center;
+	  float:left;
+	}
+	.container2:hover .overlay{
+	  opacity: 0.8;
+	}
+
+	/*Forms opmaak*/
+	.inlogpaneel{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.login_form{
+		width: 49%;
+		float: left;
+		margin: 0 auto; 
+		margin-bottom: 20%;
+		margin-top: 5%;
+	}
+	.register{
+		margin: 0 auto;
+		margin-top: 5%;
+		width: 50%;
+		margin-left: 1%;
+		float: left;
+	}
+	.contact_form{
+		margin: 0 auto;
+		width: 50%;
+	}
+	form{
+		font-size: 1.4em;
+		padding:5%;
+		color: #4F4E4E;
+		margin: 0 auto;
+		margin-bottom: 10%;
+		border: 2px solid hsla(252, 62%, 55%, 1);
+	}
+	fieldset{
+		max-width: 100%;
+	}
+	legend{
+		font-family:'lemonmilkregular','museo_sans500', Helvetica ,Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, sans-serif;
+		text-align: left;
+		font-size: 2vw;
+		padding-bottom: 2%;
+		color:#hsla(252, 62%, 55%, 1);
+	}
+
+	fieldset li{
+		padding-top: 1%;
+		padding-bottom: 2%;
+	}
+	fieldset ul li input{
+		margin-left: 8%;
+    	background-color: transparent;
+    	border: solid #313131 2px;
+    	height: 1.5vw;
+    	float: right;
+    	width: 50%;
+    }
+    textarea{
+    	background-color: transparent;
+    	border: solid #313131 2px;
+    	height: 4.5vw;
+    	margin-top: 1%;
+    	margin-bottom: 3%;
+    	width: 55%;
+    	float: right;
+    }
+    button{
+    	font-family: 'museo_sans500', Helvetica ,Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, sans-serif;
+    	text-transform: uppercase;
+    	border: solid transparent 2px;
+    	color: #ffffff;
+    	background-color: hsla(252, 62%, 55%, 1);
+    	font-size: 24px;
+			padding:1%;	
+		margin: 0 auto;
+
+    }
+	/*Footer opmaak*/
+	footer{
+		line-height: 200%;
+		margin-top: 2%;
+		padding-bottom: 1%;
+		background-color: hsla(252, 62%, 55%, 1);
+		clear: both;	
+		color:#ffffff;
+		text-align: center;
+		overflow: auto;
+	}
+	.homepagefooter{
+		margin-top: 10%;
+	}
+	footer p:first-child{
+	padding:2%;
+	font-size: 1.2vw;
+	text-transform: uppercase;
+	}	
+	.footericons{
+		margin-left: 10%;
+		float:left;
+		width: 35px;
+		border-right: solid 4px #ffffff;
+		padding-right: 3%;
+	}
+	.footericons img{
+	padding-top: 15%;
+	width: 100%;
+	-webkit-filter: invert(100%); /* Safari */
+	filter:invert(100%);	
+	}
+	.footericons img:hover { 	
+	-webkit-filter: invert(85%); /* Safari */
+	filter:invert(85%);
+	}
+	.footertext{
+		font-size: 0.8vw;
+		float:left; 
+		padding-left: 12vw;
+		text-align: left;
+		margin-bottom: 3%;
+	
+	}
+
+
+	 /*mobiel*/
+	@media only screen and (min-width:320px) and (max-width:560px){	
+	/*Responsive mobile menu*/
+	.js #menu {
+		display:none;
+	}
+	
+	.js .slicknav_menu {
+		display:block;
+	}
+	#menu{
+		display: block;
+	}
+	nav{
+		display: none;
+	}
+	
+	.newcollection{
+		width: 100%;
+		background-size: cover;
+		height: 100vw;
+	}
+		.newcollection h1{
+		padding-top: 45%;
+
+		 font-family: 'lemonmilkregular','museo_sans500', Helvetica , sans-serif;
+		 font-size: 2.5em;
+		 text-shadow: 1px 1px black;
+	}
+	.newcollection p{
+		font-size: 1.8em;
+	}
+	.shopnow{
+		display: none;
+	}
+		
+	.genders{
+		max-width: 100%;
+	}
+	.centerpls{
+		max-width: 100%;
+		margin: 0 auto;
+
+	}
+	/*Mobiel productpagina*/
+		/*Producten opmaak*/
+    .productpagina{
+    	max-width: 100%;
+    	margin: 0 auto;
+    	clear: both;
+    	display: flex;
+    	align-items: flex-end;
+		flex-direction: column;
+    }
+    .zijbeelden{
+		order: 2;
+    	flex: 1;
+    	height:120vh;
+   
+    }
+    .zijbeelden img{
+    	display: block;
+    	line-height: 0%;
+    	width: 100%;
+    	margin: 0;
+    	padding-bottom: 1%;
+    }
+    .hoofdbeeld{
+		order: 1;
+    	flex: 2;
+   
+    }
+    .hoofdbeeld img{
+    	width: 100%;
+    }
+    .productomschrijving{
+    	flex: 1;
+    	padding: 4%;
+		font-size: 1em;
+    	background-color: hsla(252, 62%, 55%, 1)
+			;
+    	text-align: left;
+    	color: #ffffff;
+    	align-self: flex-end;
+    }
+    .productomschrijving h3{
+    	align-self: flex-start;
+    	text-transform: uppercase;
+    	font-size: 1em;
+    	padding: 2%;
+    }
+    .buy_now{
+		font-size: 1em;
+    	text-transform: uppercase;
+    	text-align: center;
+    	color: #ffffff;
+    	background-color: #313131;
+    	padding: 1.6%;
+    	margin-bottom: 1%;
+    }
+    .hoofdbeeld button{
+		height: 100px;
+    	text-align: center;
+    	float: none;
+    	width: 100%;
+    }
+
+	/*Mobile footer*/
+	footer{
+		line-height: 150%;
+	}
+	.homepagefooter{
+		margin-top: 10%;
+	}
+	/*Mobiel productreeks*/
+	figure.snip1321 {
+ 	 width: 100%;
+ 	}
+ 	h2{
+ 		font-size: 2em;
+ 		width: 80%;
+ 	}
+ 	/*productreeks mobiel*/
+ 	figure.snip1321 h3 {
+	  font-size: 2em;
+	}
+	figure.snip1321 h4 {
+	  font-size: 2em;
+	  letter-spacing: 4px;
+	}
+	/*winkelwagen mobiel*/
+	.winkelmandje{
+   		max-width: 98%;
+   	}
+   	td{
+    	font-size: 1.2em;
+   	} 
+   	.wmbril .wmname{
+   		font-size: 1em;
+		font-family:'lemonmilkregular','museo_sans500', Helvetica ,Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, sans-serif;
+   	}
+   	.winkelmandje li{
+   		display: inline-block;
+   		margin-top: 3%;
+   		color: hsla(252, 62%, 55%, 1)
+			 ;
+   		font-size: 1em;
+   	}
+   	.winkelmandje p{
+   		margin-top: 2%;
+   		float: right;
+   		font-size: 1.1em;
+   	}
+   	.winkelmandje span{
+   		font-size: 2em;
+   		color: hsla(252, 62%, 55%, 1)
+			 ;
+   	}
+   	.winkelmandje button{
+ 		margin: 0 auto;
+ 		margin-top: 5%;
+ 		margin-bottom: 5%;
+		padding: 10%;
+		padding-left: 100%;
+		padding-top: 5%;
+		float: right;
+ 	}
+	/*Mobiel Forms opmaak*/
+	.inlogpaneel{
+		width: 100%;
+	}
+	.login_form{
+		width: 100%;
+		margin-bottom: 1%;
+	}
+	.register{
+		margin-top: 1%;
+		margin-bottom: 1%;
+		width: 100%;
+		margin-left: 0%;
+	}
+	form{
+		font-size: 1.4em;
+		padding:5%;
+		color: #4F4E4E;
+		margin: 0 auto;
+		margin-bottom: 10%;
+		border: 2px solid hsla(252, 62%, 55%, 1)
+		;
+	}
+	fieldset{
+		max-width: 100%;
+	}
+	legend{
+		font-size: 24px;
+	}
+
+	fieldset li{
+		padding-top: 1%;
+		padding-bottom: 2%;
+	}
+	fieldset ul li input{
+    	height: 20px;
+    	width: 50%;
+    }
+    textarea{
+    	background-color: transparent;
+    	border: solid #313131 2px;
+    	height: 50px;
+    	width: 50%;
+    }
+	
+	/*login mobiel*/
+		.inlogpaneel button{
+			font-size: 1em;
+			margin-top: 20px;
+			width: 100%;
+			height: 50px;
+		}
+	/*contact mobiel*/
+		.contact_form button{
+			font-size: 1em;
+			margin-top: 20px;
+			width: 100%;
+			height: 50px;
+		}
+		.contact_form{
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	footer p:first-child{
+	padding-top:2%;
+	padding-bottom: 2%;
+	font-size: 24px;
+	text-transform: uppercase;
+	}	
+	.footericons{
+		float:none;
+		width: 50%;
+		margin-left: 10%;
+		border-right: solid 0px #ffffff;
+	}
+	.footericons img{
+	float: left;
+	width: 25%;
+	-webkit-filter: invert(100%); /* Safari */
+	filter:invert(100%);
+	margin-bottom: 10%;	
+	}
+	.footericons img:hover { 	
+	-webkit-filter: invert(85%); /* Safari */
+	filter:invert(85%);
+	}
+	.footertext{
+		clear: both;
+		font-size: 10px;
+		float:none; 
+		padding-left: 12vw;
+		text-align: left;
+		margin-bottom: 3%;
+		}
+}
