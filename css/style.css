@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'lemonmilkregular';
+    src: url('../fonts/lemonmilk-webfont.woff2') format('woff2'),
+         url('../fonts/lemonmilk-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	}
+	@font-face {
+    font-family: 'museo_sans500';
+    src: url('../fonts/MuseoSans_500-webfont.eot');
+    src: url('../fonts/MuseoSans_500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MuseoSans_500-webfont.woff2') format('woff2'),
+         url('../fonts/MuseoSans_500-webfont.woff') format('woff'),
+         url('../fonts/MuseoSans_500-webfont.ttf') format('truetype'),
+         url('../fonts/MuseoSans_500-webfont.svg#museo_sans500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	}
+	@font-face {
+    font-family: 'museo_sans500_italic';
+    src: url('../fonts/MuseoSans_500_Italic-webfont.eot');
+    src: url('../fonts/MuseoSans_500_Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MuseoSans_500_Italic-webfont.woff2') format('woff2'),
+         url('../fonts/MuseoSans_500_Italic-webfont.woff') format('woff'),
+         url('../fonts/MuseoSans_500_Italic-webfont.ttf') format('truetype'),
+         url('../fonts/MuseoSans_500_Italic-webfont.svg#museo_sans500_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	}
+	html{
+		background-color: #f6f7f8;
+		color: #313131;
+		height: 100%;
+	}
+	body{
+		font-family: 'museo_sans500',Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial, "sans-serif";
+		font-size: 16px;
+		min-height: 100%;
+		display: flex;
+        flex-direction: column;
+    }
+    body .sg-title{
+        font-size: 3vw;
+        padding-left: 35%;
+        padding-bottom: 1%;
+        border-bottom: 4px solid hsla(252, 62%, 55%, 1);
+    }
+    body .sg-subtitle{
+        font-size: 2vw;
+        padding-top: 3%;
+        padding-left: 2%;
+    }
+    .kleur{
+        color: white;
+        padding-left: 1%;
+        margin-top: 1%;
+        margin-left: 3%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        background-color: hsla(252, 62%, 55%, 1);
+        width: 10%;
+    }
+.milk{
+    margin-left: 3%;
+    font-family: 'lemonlemonmilkregular',sans-serif;
+    font-size: 2vw;
+    padding: 1% 0% 1% 0%;
+}
+.museo{
+    margin-left: 3%;
+    font-family: 'museo_sans500';
+    font-size: 2vw;
+    padding: 1% 0% 1% 0%;
+}
+.museo-italic{
+    margin-left: 3%;
+    font-family: 'museo_sans500_italic';
+    font-size: 2vw;
+    padding: 1% 0% 1% 0%;   
+}
+.login{
+    width: 7%;
+    margin-left: 3%;
+    padding-top: 1%;
+}
+.inlogpaneel{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+.login_form{
+    width: 49%;
+    float: left;
+    margin: 0 auto; 
+    margin-bottom: 20%;
+    margin-top: 5%;
+}
+.register{
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 50%;
+    margin-left: 1%;
+    float: left;
+}
+.contact_form{
+    margin: 0 auto;
+    width: 50%;
+}
+form{
+    font-size: 1.4em;
+    padding:5%;
+    color: #4F4E4E;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    border: 2px solid hsla(252, 62%, 55%, 1);
+}
+fieldset{
+    max-width: 100%;
+}
+legend{
+    font-family:'lemonmilkregular','museo_sans500', Helvetica ,Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, sans-serif;
+    text-align: left;
+    font-size: 2vw;
+    padding-bottom: 2%;
+    color:#hsla(252, 62%, 55%, 1);
+}
+
+fieldset li{
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+fieldset ul li input{
+    margin-left: 8%;
+    background-color: transparent;
+    border: solid #313131 2px;
+    height: 1.5vw;
+    float: right;
+    width: 50%;
+}
+textarea{
+    background-color: transparent;
+    border: solid #313131 2px;
+    height: 4.5vw;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    width: 55%;
+    float: right;
+}
+button{
+    font-family: 'museo_sans500', Helvetica ,Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, sans-serif;
+    text-transform: uppercase;
+    border: solid transparent 2px;
+    color: #ffffff;
+    background-color: hsla(252, 62%, 55%, 1);
+    font-size: 24px;
+        padding:1%;	
+    margin: 0 auto;
+
+}
